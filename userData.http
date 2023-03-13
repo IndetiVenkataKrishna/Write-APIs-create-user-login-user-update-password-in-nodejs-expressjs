@@ -1,0 +1,30 @@
+###
+POST http://localhost:3000/register
+content-type: application/json 
+
+{
+  "username": "VenkyKrish",
+  "name": "Venkata Krishna Indeti",
+  "password": "manu@123",
+  "gender": "male",
+  "location": "Andhra Pradesh"
+}
+###
+
+POST http://localhost:3000/login
+content-type: application/json 
+
+{
+  "username": "venkat_krishna",
+  "password": "venkat123"
+}
+
+###
+PUT http://localhost:3000/change-password
+content-type: application/json 
+
+{
+  "username": "VenkyKrish",
+  "oldPassword": "manu@123",
+  "newPassword": "unam@123"
+}
